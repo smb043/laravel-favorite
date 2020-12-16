@@ -53,7 +53,7 @@ trait Favoriter
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function favoriteItems()
+    public function myFavorites()
     {
         return $this->hasMany(config('favorite.favorite_model'), config('favorite.user_foreign_key'), $this->getKeyName());
     }
